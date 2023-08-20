@@ -1,0 +1,100 @@
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #fff;
+    color: #103a50;
+    font-family: "HelveticaNeueCyr", sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.emx-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.emx-main {
+    flex: 1 0 auto;
+}
+
+.emx-footer {
+    flex: 0 0 auto;
+}
+
+.emx-container {
+    max-width: 1210px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.emx-logo {
+    @media screen and (max-width: 767px) {
+        width: 50%;
+    }
+    img{
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+    &:last-child{
+        @media screen and (max-width: 767px) {
+            padding-right: 0;
+            max-width: 150px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        padding-right: 20px;
+        text-align: right;
+    }
+}
+
+.emx-logo__bayer{
+    max-width: 351px;
+    min-width: 215px;
+    img{
+        display: block;
+        width: 100%;
+    }
+}
+.emx-logo__agromon {
+    max-width: 215px;
+}
+
+.emx-title {
+    font-size: 32px;
+    line-height: 44px;
+    font-style: italic;
+    font-weight: 300;
+    @media screen and (max-width: 1185px){
+        font-size: 28px;
+        line-height: 40px;
+    }
+    @media screen and (max-width: 994px) {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    @media screen and (max-width: 767px) {
+        font-size: 22px;
+        line-height: 34px;
+    }
+}
+.emx__link {
+    color: #103a50;
+    text-decoration: none;
+    transition: all 0.3s ease-out, right 0.2s ease-out;
+    &--email {
+        text-decoration: underline;
+    }
+    &:hover{
+        color: #0075a6;
+        text-decoration: underline;
+    }
+}
+

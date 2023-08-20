@@ -1,0 +1,92 @@
+.emx-footer{
+    padding: 40px 0 40px;
+    @media screen and (max-width: 320px) {
+        padding: 25px 0 20px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 994px) {
+            align-items: flex-end;
+        }
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+            align-items: start;
+
+        }
+    }
+    &__logo-agromon img{
+        width: 154px;
+    }
+    &__item{
+        min-width: 350px;
+        &:last-child{
+            @media screen and (max-width: 767px) {
+                padding-right: 0;
+            }
+            @media screen and (max-width: 500px) {
+                margin-bottom: 0;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            margin-bottom: 30px;
+        }
+        @media screen and (max-width: 994px) {
+            min-width: unset;
+        }
+        &-inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            @media screen and (max-width: 994px) {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                // min-height: 110px;
+            }
+        }
+    }
+    &__logo{
+        @media screen and (max-width: 994px) {
+            margin-bottom: 30px;
+        }
+    }
+    &__logo-agromon{
+        padding-bottom: 12px;
+        @media screen and (max-width: 500px) {
+            padding-bottom: 0;
+        }
+    }
+    &__logo-bayer{
+        max-width: 48px;
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    &__address{
+        font-size: 14px;
+        line-height: 20px;
+        color: #C4C4C4;
+    }
+    &__phone{
+        display: block;
+        color:#C4C4C4;
+    }
+}
+
+.emx-social-list{
+    display: flex;
+    justify-content: space-between;
+    &__item{
+        margin-left: 10px;
+        &:first-child{
+            margin-left: 0;
+        }
+        @media screen and (max-width: 320px) {
+            margin-left: 5px;
+        }
+    }
+}
